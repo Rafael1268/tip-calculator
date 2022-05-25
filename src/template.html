@@ -4,11 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4032eacfd2.js" crossorigin="anonymous"></script>
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
   <div class="container">
-    
+    <div class="card">
+      <div class="leftSide">
+        <div id="billAmount">
+          <i class="fa-solid fa-dollar-sign fa-2x"></i>
+          <label for="billInput">Bill</label>
+          <input type="number" name="billInput" id="billInput" placeholder="0">
+        </div>
+        <div id="tipAmount">
+          <h6>Select Tip %</h6>
+          <div>
+            <button class="tipBtn" id="5%">5%</button>
+            <button class="tipBtn" id="10%">10%</button>
+            <button class="tipBtn" id="15%">15%</button>
+            <button class="tipBtn" id="25%">25%</button>
+            <button class="tipBtn" id="50%">50%</button>
+            <input type="number" name="tipInput" id="tipInput" placeholder="Custom">
+          </div>
+        </div>
+        <div id="peopleAmount">
+          <i class="fa-solid fa-user fa-2x"></i>
+          <label for="peopleInput">Number of People</label>
+          <input type="number" name="peopleInput" id="peopleInput" placeholder="0">
+        </div>
+      </div>
+      <div class="rightSide">
+        <div id="tipTotal">
+          <div>
+            <h6>Tip Amount</h6>
+            <p>/ person</p>
+          </div>
+          <h1>$0.00</h1>
+        </div>
+        <div id="personTotal">
+          <div>
+            <h6>Total</h6>
+            <p>/ person</p>
+          </div>
+          <h1>$0.00</h1>
+        </div>
+        <button id="resetBtn">RESET</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

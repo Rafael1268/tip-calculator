@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+  --main-cyan: hsl(172, 67%, 45%);
+  --darkest-cyan: hsl(183, 100%, 15%);
+  --dark-cyan: hsl(186, 14%, 43%);
+  --normal-cyan: hsl(184, 14%, 56%);
+  --light-cyan: hsl(185, 41%, 84%);
+  --lighest-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: 'Space Mono', monospace;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-cyan);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 40px;
+  padding: 30px;
+  width: max-content;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 400px;
+  gap: 30px;
+}
+
+/* Hide number input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Left side of card */
+.leftSide {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leftSide label,
+.leftSide h6 {
+  color: var(--darkest-cyan);
+  font-size: 16px;
+}
+
+.leftSide i {
+  position: absolute;
+  font-size: 25px;
+  color: var(--dark-cyan);
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+#tipAmount div {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.tipBtn,
+#tipInput {
+  border-radius: 10px;
+  border: none;
+  font-size: 24px;
+  padding: 8px 0;
+  width: 120px;
+  text-align: center;
+}
+
+.tipBtn {
+  background-color: var(--darkest-cyan);
+  color: var(--light-cyan)
+}
+
+.selectedBtn {
+  background-color: var(--main-cyan);
+  color: var(--darkest-cyan);
+}
+
+#tipInput {
+  background-color: var(--light-cyan);
+  color: var(--darkest-cyan);
+}
+
+#billInput,
+#peopleInput {
+  background-color: var(--light-cyan);
+  border: none;
+  font-size: 24px;
+  text-align: end;
+  padding: 8px 12px;
+  padding-left: 50px;
+  width: 100%;
+}
+
+/* Right side of card */
+.rightSide {
+  background-color: var(--darkest-cyan);
+  border-radius: 25px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#tipTotal,
+#personTotal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+#tipTotal h6,
+#personTotal h6 {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+#tipTotal p,
+#personTotal p {
+  color: var(--light-cyan);
+}
+
+#tipTotal h1,
+#personTotal h1 {
+  color: var(--main-cyan);
+  font-size: 40px;
+}
+
+#resetBtn {
+  background-color: var(--main-cyan);
+  border-radius: 8px;
+  border: none;
+  color: var(--darkest-cyan);
+  font-size: 24px;
+  margin-top: 80px;
+  padding: 10px 0;
+  width: 100%
+}
