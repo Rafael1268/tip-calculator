@@ -15,15 +15,16 @@
           <i class="fa-solid fa-dollar-sign fa-2x"></i>
           <label for="billInput">Bill</label>
           <input type="number" name="billInput" id="billInput" placeholder="0">
+          <h4 id="billError"></h4>
         </div>
         <div id="tipAmount">
           <h6>Select Tip %</h6>
           <div>
-            <button class="tipBtn" id="5%">5%</button>
-            <button class="tipBtn" id="10%">10%</button>
-            <button class="tipBtn" id="15%">15%</button>
-            <button class="tipBtn" id="25%">25%</button>
-            <button class="tipBtn" id="50%">50%</button>
+            <button class="tipBtn selectedBtn" id="5">5%</button>
+            <button class="tipBtn" id="10">10%</button>
+            <button class="tipBtn" id="15">15%</button>
+            <button class="tipBtn" id="25">25%</button>
+            <button class="tipBtn" id="50">50%</button>
             <input type="number" name="tipInput" id="tipInput" placeholder="Custom">
           </div>
         </div>
@@ -31,6 +32,7 @@
           <i class="fa-solid fa-user fa-2x"></i>
           <label for="peopleInput">Number of People</label>
           <input type="number" name="peopleInput" id="peopleInput" placeholder="0">
+          <h4 id="peopleError"></h4>
         </div>
       </div>
       <div class="rightSide">
@@ -39,14 +41,14 @@
             <h6>Tip Amount</h6>
             <p>/ person</p>
           </div>
-          <h1>$0.00</h1>
+          <h1 id="tipPerson">$0.00</h1>
         </div>
         <div id="personTotal">
           <div>
             <h6>Total</h6>
             <p>/ person</p>
           </div>
-          <h1>$0.00</h1>
+          <h1 id="totalPerson">$0.00</h1>
         </div>
         <button id="resetBtn">RESET</button>
       </div>

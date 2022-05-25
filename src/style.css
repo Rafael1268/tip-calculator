@@ -23,6 +23,12 @@ body {
   background-color: var(--light-cyan);
 }
 
+h4 {
+  position: absolute;
+  color: red;
+  margin-left: 2px;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -149,10 +155,12 @@ input[type=number] {
   color: var(--light-cyan);
 }
 
-#tipTotal h1,
-#personTotal h1 {
+#tipPerson,
+#totalPerson {
   color: var(--main-cyan);
   font-size: 40px;
+  max-width: 180px;
+  overflow: scroll;
 }
 
 #resetBtn {
