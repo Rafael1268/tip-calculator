@@ -173,3 +173,10 @@ input[type=number] {
   padding: 10px 0;
   width: 100%
 }
+
+@media (max-width: 950px) {
+  .card {
+    grid-template-columns: 400px;
+    grid-template-rows: 400px 400px;
+  }
+}
